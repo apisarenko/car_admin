@@ -8,8 +8,6 @@ class CarAdmin(admin.ModelAdmin):
     list_display = ('brand', 'model', 'review_count')
     search_fields = ('brand', 'model')
     list_filter = ('brand', 'model')
-
-
     pass
 
 
@@ -18,9 +16,6 @@ class ReviewAdmin(admin.ModelAdmin):
     list_display = ('car', 'title')
     search_fields = ('car__model', 'title')
     list_filter = ('car', 'title')
-
-
-
 
 
 admin.site.register(Car, CarAdmin)
