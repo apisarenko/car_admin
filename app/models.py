@@ -31,7 +31,5 @@ class Review(models.Model):
         verbose_name_plural = 'Обзорные статьи'
 
 
-
     def __str__(self):
         return str(self.car) + ' ' + self.title
-
